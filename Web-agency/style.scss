@@ -337,7 +337,60 @@ header
     
 }
 
-
+// GALLERY
+.gallery
+{
+    text-align: center;
+    padding: 50px 0;
+    h1{
+        font-size: 2.5rem;
+        color: $darkBlue;
+        &::after{
+            @extend .line;
+            margin: 10px auto;
+        }
+    }
+    .container{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h4{
+            background:$orange;
+            display: inline;
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 1.2rem;
+            padding: 10px;
+            color: var(--bela);
+        }
+       
+        .img1{
+            @extend .images;
+        }
+        .img2{
+            @extend .images;
+            background-image: url(img/works2.jpg);
+        }
+        .img3{
+            @extend .images;
+            background-image: url(img/works3.jpg);
+        }
+        .img4{
+            @extend .images;
+            background-image: url(img/works4.jpg);
+        }
+        .img5{
+            @extend .images;
+            background-image: url(img/works5.jpg);
+        }
+        .img6{
+            @extend .images;
+            background-image: url(img/works2.jpg);
+        }
+    }
+}
 
 
 // FOOTER

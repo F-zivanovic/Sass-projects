@@ -30,7 +30,7 @@ a {
   a:hover {
     transition: 0.3s ease; }
 
-.line, .about article:first-child h1::after, .services .container article h1::after, .blog h1::after {
+.line, .about article:first-child h1::after, .services .container article h1::after, .blog h1::after, .gallery h1::after {
   display: block;
   content: "";
   width: 100px;
@@ -38,7 +38,7 @@ a {
   background: #fd7f45;
   margin: 10px 0; }
 
-.images {
+.images, .gallery .container .img1, .gallery .container .img2, .gallery .container .img3, .gallery .container .img4, .gallery .container .img5, .gallery .container .img6 {
   background-image: url(img/works1.jpg);
   background-position: center;
   background-size: cover;
@@ -48,7 +48,7 @@ a {
   border-bottom: 15px solid #459ad3;
   position: relative; }
   @media (max-width: 768px) {
-    .images {
+    .images, .gallery .container .img1, .gallery .container .img2, .gallery .container .img3, .gallery .container .img4, .gallery .container .img5, .gallery .container .img6 {
       flex: 0 0 100%; } }
 
 nav {
@@ -236,6 +236,39 @@ header {
           transition: 0.3s ease;
           background-color: #fd7f45;
           border-radius: 20px 10px 20px 10px; }
+
+.gallery {
+  text-align: center;
+  padding: 50px 0; }
+  .gallery h1 {
+    font-size: 2.5rem;
+    color: #1d527c; }
+    .gallery h1::after {
+      margin: 10px auto; }
+  .gallery .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .gallery .container h4 {
+      background: #fd7f45;
+      display: inline;
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 1.2rem;
+      padding: 10px;
+      color: var(--bela); }
+    .gallery .container .img2 {
+      background-image: url(img/works2.jpg); }
+    .gallery .container .img3 {
+      background-image: url(img/works3.jpg); }
+    .gallery .container .img4 {
+      background-image: url(img/works4.jpg); }
+    .gallery .container .img5 {
+      background-image: url(img/works5.jpg); }
+    .gallery .container .img6 {
+      background-image: url(img/works2.jpg); }
 
 footer {
   background-image: linear-gradient(to right, rgba(253, 127, 69, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
