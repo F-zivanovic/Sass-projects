@@ -15,6 +15,10 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif; }
 
+.container {
+  width: 80%;
+  margin: auto; }
+
 ul {
   list-style-type: none; }
 
@@ -22,5 +26,79 @@ a {
   text-decoration: none; }
   a:hover {
     transition: 0.3s ease; }
+
+nav {
+  background: linear-gradient(to right, #fd7f45, #1d527c);
+  padding-top: 10px;
+  padding: 5px 0; }
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media (max-width: 768px) {
+      nav .container {
+        flex-direction: column; } }
+    nav .container .logo {
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 700;
+      text-align: center; }
+      nav .container .logo:hover {
+        color: lightgray; }
+    nav .container ul {
+      display: flex; }
+      nav .container ul li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 2px;
+        padding: 0 30px; }
+        @media (max-width: 768px) {
+          nav .container ul li a {
+            padding: 0 10px; } }
+        nav .container ul li a:hover {
+          color: lightgray; }
+
+header {
+  background-image: linear-gradient(rgba(29, 82, 124, 0.7), rgba(253, 127, 69, 0.7)), url(img/baloon.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center; }
+  @media (max-width: 768px) {
+    header {
+      height: 80vh; } }
+  header h2 {
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 1.3px;
+    line-height: 1.3; }
+    @media (max-width: 768px) {
+      header h2 {
+        font-size: 1.9rem; } }
+    header h2 span {
+      font-style: italic;
+      font-weight: 700; }
+  header p {
+    padding: 20px 0;
+    font-size: 1.2rem; }
+  header button {
+    background: none;
+    padding: 15px 30px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: #fff; }
+    header button:hover {
+      transition: 0.3s ease;
+      cursor: pointer;
+      background-color: #fff;
+      color: #3c3b3c; }
 
 /*# sourceMappingURL=style.css.map */
