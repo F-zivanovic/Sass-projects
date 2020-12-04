@@ -1,0 +1,43 @@
+// GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap');
+
+// VARIABLES
+$darkBlue: #1d527c;  /* rgb(29, 82, 124) */
+$lightBlue: #459ad3; /* rgb(69, 154, 211) */
+$orange: #fd7f45;      /* rgb(253, 127, 69) */
+$darkGray: #3c3b3c;
+$lightGray: lightgray;
+$white: #fff;
+$transition: .3s ease;
+$padding: 100px;
+$font:16px;
+
+// DEFAULT STYLES
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    line-height: 1.6;
+    font-size: $font;
+    font-family:'Open Sans', sans-serif;;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Montserrat', sans-serif;
+}
+ul
+{
+    list-style-type: none;
+}
+a 
+{
+    text-decoration: none;
+    &:hover{
+        transition: $transition;
+    }
+}
