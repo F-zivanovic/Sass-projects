@@ -267,3 +267,56 @@ header
         }
    }
 }
+
+// BLOG
+.blog
+{
+    padding: $padding;
+    text-align: center;
+    h1{
+        font-size: 3rem;
+        color: $darkBlue;
+        padding-bottom: 20px;
+        &::after{
+            @extend .line;
+            margin: 10px auto;
+            background-color: $darkBlue;
+        }
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        article{
+            flex: 0 0 30%;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+            img{
+                width: 100%;
+                border-radius: 10%;
+                border: 5px solid $orange;
+                @media(max-width:768px){
+                    margin-top: 20px;
+                }
+                &:hover{
+                    transform: scale(1.1);
+                    transition-duration: .8s;
+                }
+               
+            }
+            h3{
+                font-size: 2rem;
+                margin: 10px 0;
+            }
+            p{
+                text-align: justify;
+            }
+            button{
+                @include btn1();
+            }
+        }
+    }
+    
+}

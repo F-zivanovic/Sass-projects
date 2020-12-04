@@ -30,7 +30,7 @@ a {
   a:hover {
     transition: 0.3s ease; }
 
-.line, .about article:first-child h1::after, .services .container article h1::after {
+.line, .about article:first-child h1::after, .services .container article h1::after, .blog h1::after {
   display: block;
   content: "";
   width: 100px;
@@ -175,5 +175,53 @@ header {
         font-size: 3rem; }
       .services .container article p {
         margin-top: 30px; }
+
+.blog {
+  padding: 100px 40px;
+  text-align: center; }
+  .blog h1 {
+    font-size: 3rem;
+    color: #1d527c;
+    padding-bottom: 20px; }
+    .blog h1::after {
+      margin: 10px auto;
+      background-color: #1d527c; }
+  .blog .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .blog .container article {
+      flex: 0 0 30%; }
+      @media (max-width: 768px) {
+        .blog .container article {
+          flex: 0 0 100%; } }
+      .blog .container article img {
+        width: 100%;
+        border-radius: 10%;
+        border: 5px solid #fd7f45; }
+        @media (max-width: 768px) {
+          .blog .container article img {
+            margin-top: 20px; } }
+        .blog .container article img:hover {
+          transform: scale(1.1);
+          transition-duration: .8s; }
+      .blog .container article h3 {
+        font-size: 2rem;
+        margin: 10px 0; }
+      .blog .container article p {
+        text-align: justify; }
+      .blog .container article button {
+        background-color: #1d527c;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        border-radius: 10px 20px 10px 20px;
+        color: #fff;
+        text-transform: uppercase;
+        margin-top: 20px;
+        border: none; }
+        .blog .container article button:hover {
+          transition: 0.3s ease;
+          background-color: #fd7f45;
+          border-radius: 20px 10px 20px 10px; }
 
 /*# sourceMappingURL=style.css.map */
