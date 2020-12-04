@@ -219,3 +219,51 @@ header
     }
 }
 
+// SERVICES
+.services
+{
+    padding: $padding;
+    background-image: linear-gradient(rgba(29, 82, 124,.9),rgba(29, 82, 124,.9)), url(img/header.jpg);   
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    background-attachment: fixed;
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        article{
+            flex: 0 0 45%;
+            @media(max-width: 768px){
+                flex: 0 0 100%;
+            }
+            &:first-child{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                @media(max-width: 768px){
+                   order: 1;
+                }
+                i{
+                    font-size: 5rem;
+                    color: $orange;
+                    flex: 0 0 50%;
+                    @media(max-width: 768px){
+                        margin-top: 30px;
+                        text-align: center;
+                    }
+                }
+            }
+            h1{
+                font-size: 3rem;
+                &::after{
+                    @extend .line;
+                }
+            }
+            p{
+                margin-top: 30px;
+            }
+            
+        }
+   }
+}

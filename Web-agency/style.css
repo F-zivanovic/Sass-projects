@@ -30,7 +30,7 @@ a {
   a:hover {
     transition: 0.3s ease; }
 
-.line, .about article:first-child h1::after {
+.line, .about article:first-child h1::after, .services .container article h1::after {
   display: block;
   content: "";
   width: 100px;
@@ -139,5 +139,41 @@ header {
         color: #1d527c; }
       .about article:first-child p {
         padding-right: 50px; }
+
+.services {
+  padding: 100px 40px;
+  background-image: linear-gradient(rgba(29, 82, 124, 0.9), rgba(29, 82, 124, 0.9)), url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  background-attachment: fixed; }
+  .services .container {
+    display: flex;
+    flex-wrap: wrap; }
+    .services .container article {
+      flex: 0 0 45%; }
+      @media (max-width: 768px) {
+        .services .container article {
+          flex: 0 0 100%; } }
+      .services .container article:first-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; }
+        @media (max-width: 768px) {
+          .services .container article:first-child {
+            order: 1; } }
+        .services .container article:first-child i {
+          font-size: 5rem;
+          color: #fd7f45;
+          flex: 0 0 50%; }
+          @media (max-width: 768px) {
+            .services .container article:first-child i {
+              margin-top: 30px;
+              text-align: center; } }
+      .services .container article h1 {
+        font-size: 3rem; }
+      .services .container article p {
+        margin-top: 30px; }
 
 /*# sourceMappingURL=style.css.map */
