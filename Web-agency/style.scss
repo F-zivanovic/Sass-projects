@@ -61,6 +61,22 @@ a
     margin: 10px 0;
 }
 
+.images
+{
+    background-image: url(img/works1.jpg);
+    background-position: center;
+     background-size: cover;
+     height: 500px;
+    flex: 0 0 30%;
+     margin-top: 20px;
+     border-bottom: 15px solid $lightBlue;
+     position: relative;
+     @media(max-width:768px)
+     {
+      flex: 0 0 100%;
+      }
+}
+
 // MIXINS
 @mixin btn {
     background: none;
@@ -319,4 +335,33 @@ header
         }
     }
     
+}
+
+
+
+
+// FOOTER
+footer
+{
+    background-image:linear-gradient(to right,rgba(253, 127, 69, .8), rgba(29, 82, 124, .8)), url(img/baloon.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 30vh;
+    padding: $padding;
+    text-align: center;
+    i{
+        font-size: 2rem;
+        color: $darkBlue;
+        padding-left: 20px;
+        &:hover{
+            color: $lightBlue;
+            transition: $transition;
+        }
+    }
+    p{
+        color: $white;
+        font-size: 1.4rem;
+        padding: 20px 0;
+        font-style: italic;
+    }
 }

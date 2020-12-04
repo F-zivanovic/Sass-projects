@@ -38,6 +38,19 @@ a {
   background: #fd7f45;
   margin: 10px 0; }
 
+.images {
+  background-image: url(img/works1.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  flex: 0 0 30%;
+  margin-top: 20px;
+  border-bottom: 15px solid #459ad3;
+  position: relative; }
+  @media (max-width: 768px) {
+    .images {
+      flex: 0 0 100%; } }
+
 nav {
   background: linear-gradient(to right, #fd7f45, #1d527c);
   padding-top: 10px;
@@ -223,5 +236,25 @@ header {
           transition: 0.3s ease;
           background-color: #fd7f45;
           border-radius: 20px 10px 20px 10px; }
+
+footer {
+  background-image: linear-gradient(to right, rgba(253, 127, 69, 0.8), rgba(29, 82, 124, 0.8)), url(img/baloon.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 30vh;
+  padding: 100px 40px;
+  text-align: center; }
+  footer i {
+    font-size: 2rem;
+    color: #1d527c;
+    padding-left: 20px; }
+    footer i:hover {
+      color: #459ad3;
+      transition: 0.3s ease; }
+  footer p {
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 20px 0;
+    font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
