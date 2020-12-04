@@ -18,6 +18,9 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 80%;
   margin: auto; }
+  @media (max-width: 768px) {
+    .container {
+      width: 90%; } }
 
 ul {
   list-style-type: none; }
@@ -26,6 +29,14 @@ a {
   text-decoration: none; }
   a:hover {
     transition: 0.3s ease; }
+
+.line, .about article:first-child h1::after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background: #fd7f45;
+  margin: 10px 0; }
 
 nav {
   background: linear-gradient(to right, #fd7f45, #1d527c);
@@ -100,5 +111,33 @@ header {
       cursor: pointer;
       background-color: #fff;
       color: #3c3b3c; }
+
+.about {
+  padding: 100px 40px;
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .about {
+      padding: 50px 0px; } }
+  .about article {
+    flex: 1; }
+    @media (max-width: 768px) {
+      .about article {
+        flex: 0 0 100%;
+        margin-top: 30px; } }
+    .about article:last-child img {
+      width: 100%;
+      height: 300px; }
+    .about article:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+      padding-right: 40px; }
+      .about article:first-child h1 {
+        font-size: 3rem;
+        color: #1d527c; }
+      .about article:first-child p {
+        padding-right: 50px; }
 
 /*# sourceMappingURL=style.css.map */
