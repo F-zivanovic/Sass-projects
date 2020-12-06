@@ -55,7 +55,7 @@ header {
   background-image: linear-gradient(rgba(110, 37, 148, 0.9), rgba(110, 37, 148, 0.9)), url(img/header3.jpg);
   background-position: center;
   background-size: cover;
-  height: 93vh;
+  height: 94vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,5 +83,42 @@ header {
     header button:hover {
       transition: 0.4s ease;
       background-color: #ecd444; }
+
+.about {
+  display: flex;
+  flex-wrap: wrap; }
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column; } }
+  .about article {
+    flex: 0 0 50%;
+    padding: 50px;
+    color: #fff; }
+    .about article i {
+      color: #ecd444;
+      font-size: 2.4rem; }
+    .about article h3 {
+      color: #fff;
+      padding: 10px 0; }
+    .about article button {
+      background: none;
+      border: 2px solid #ecd444;
+      color: #ecd444;
+      padding: 10px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin: 20px 0; }
+      .about article button:hover {
+        transition: 0.4s ease;
+        background-color: #ecd444;
+        color: #515365; }
+    .about article:first-child {
+      background-color: #515365; }
+    .about article:nth-child(2) {
+      background-color: #4e5062; }
+    .about article:nth-child(3) {
+      background-color: #4b4d5e; }
+    .about article:last-child {
+      background-color: #484a5a; }
 
 /*# sourceMappingURL=style.css.map */

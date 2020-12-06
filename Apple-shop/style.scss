@@ -11,7 +11,7 @@ $yellow: #ecd444;
 $white: #fff;
 $text: #444;
 $transition: .4s ease;
-$padding:100px 50px;
+$padding:50px;
 $font:16px;
 
 // DAFAULT STYLES
@@ -76,6 +76,21 @@ a
     }   
 }
 
+@mixin btn1 {
+    background: none;
+    border: 2px solid $yellow;
+    color: $yellow;
+    padding: 10px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin: 20px 0;
+    &:hover{
+        transition: $transition;
+        background-color: $yellow;
+        color: $gray1;
+    }
+}
+
 // NAV
 nav
 {
@@ -113,7 +128,7 @@ header
     background-image: linear-gradient(rgba(110, 37, 148,.9), rgba(110, 37, 148,.9)), url(img/header3.jpg);
     background-position: center;
     background-size: cover;
-    height: 93vh;
+    height: 94vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,4 +149,43 @@ header
     button{
         @include btn();
     }
+}
+
+// ABOUT
+.about
+{
+    display: flex;
+    flex-wrap: wrap;
+    @media(max-width:768px){
+        flex-direction: column;
+    }
+    article{
+        flex: 0 0 50%;
+        padding: $padding;
+        color: $white;
+        i{
+            color: $yellow;
+            font-size: 2.4rem;
+        }
+        h3{
+            color: $white;
+            padding: 10px 0;
+        }
+        button{
+            @include btn1();
+        }
+        &:first-child{
+            background-color: $gray1;
+        }
+        &:nth-child(2){
+            background-color: $gray2;
+        }
+        &:nth-child(3){
+            background-color: $gray3;
+        }
+        &:last-child{
+            background-color: $gray4;
+        }
+    }
+  
 }
