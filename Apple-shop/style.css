@@ -21,7 +21,7 @@ a {
   a:hover {
     transition: 0.4s ease; }
 
-.line, header h1::after, .products article:nth-child(2) h2::after, .products article:nth-child(3) h2::after {
+.line, header h1::after, .products article:nth-child(2) h2::after, .products article:nth-child(3) h2::after, .contact h2::after {
   display: block;
   content: "";
   background-color: #ecd444;
@@ -152,13 +152,44 @@ header {
       .products article:nth-child(2) h2::after {
         margin: 10px 0;
         background-color: #4e5062; }
-    .products article:nth-child(3) h2 {
-      font-size: 2rem;
-      letter-spacing: 2px; }
-      .products article:nth-child(3) h2::after {
-        margin: 10px 0;
-        background-color: #4e5062; }
+    .products article:nth-child(3) {
+      border-bottom: none; }
+      .products article:nth-child(3) h2 {
+        font-size: 2rem;
+        letter-spacing: 2px; }
+        .products article:nth-child(3) h2::after {
+          margin: 10px 0;
+          background-color: #4e5062; }
     .products article:last-child {
       background-image: url(img/ipad.jpg); }
+
+.contact {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.99), rgba(255, 255, 255, 0.6)), url(img/iphone.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .contact {
+      height: 70vh; } }
+  .contact h2 {
+    font-size: 3rem;
+    padding-top: 50px; }
+    .contact h2::after {
+      background-color: #6e2594;
+      height: 4px; }
+  .contact form {
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contact form input {
+      padding: 10px 20px;
+      background: #ecd444;
+      width: 30%;
+      border: none;
+      margin-top: 10px;
+      height: 50px; }
 
 /*# sourceMappingURL=style.css.map */
