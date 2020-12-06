@@ -1,0 +1,27 @@
+// GOOGLE FONT
+@import url('https://fonts.googleapis.com/css?family=Lato|Poppins:400,700&display=swap');
+
+// VARIABLES
+$gray1: #515365;
+$gray2: #4e5062;
+$gray3: #4b4d5e;
+$gray4: #484a5a;
+$purple: rgb(110, 37, 148);
+$yellow: #ecd444;
+$white: #fff;
+$text: #444;
+$transition: .4s ease;
+$padding:100px 50px;
+$font:16px;
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Lato', sans-serif
+}
