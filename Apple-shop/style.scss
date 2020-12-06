@@ -14,6 +14,7 @@ $transition: .4s ease;
 $padding:100px 50px;
 $font:16px;
 
+// DAFAULT STYLES
 *
 {
     box-sizing: border-box;
@@ -23,5 +24,57 @@ $font:16px;
 
 body
 {
-    font-family: 'Lato', sans-serif
+    font-family: 'Lato', sans-serif;
+    line-height: 1.6;
+    font-size: $font;
+    color: $text;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul
+{
+    list-style-type: none;
+}
+a 
+{
+    text-decoration: none;
+    &:hover{
+        transition: $transition;
+    }
+}
+
+// NAV
+nav
+{
+    background: linear-gradient(to right, $purple, $yellow);
+    text-align: center;
+    padding: 10px 0;
+    ul{
+        display: flex;
+       justify-content: center;
+       li{
+           padding: 0 25px;
+           @media(max-width:768px){
+               padding:0 10px;
+           }
+           a{
+               color: $white;
+               &:hover{
+                   color: $purple;
+               }
+               i{
+                   font-size: 1.4rem;
+                   &:hover{
+                       color: $yellow;
+                       transition: $transition;
+                   }
+               } 
+           }
+       }
+    }
+
 }

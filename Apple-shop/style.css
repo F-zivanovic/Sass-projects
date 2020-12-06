@@ -5,6 +5,42 @@
   padding: 0; }
 
 body {
-  font-family: "Lato", sans-serif; }
+  font-family: 'Lato', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #444; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    transition: 0.4s ease; }
+
+nav {
+  background: linear-gradient(to right, #6e2594, #ecd444);
+  text-align: center;
+  padding: 10px 0; }
+  nav ul {
+    display: flex;
+    justify-content: center; }
+    nav ul li {
+      padding: 0 25px; }
+      @media (max-width: 768px) {
+        nav ul li {
+          padding: 0 10px; } }
+      nav ul li a {
+        color: #fff; }
+        nav ul li a:hover {
+          color: #6e2594; }
+        nav ul li a i {
+          font-size: 1.4rem; }
+          nav ul li a i:hover {
+            color: #ecd444;
+            transition: 0.4s ease; }
 
 /*# sourceMappingURL=style.css.map */
