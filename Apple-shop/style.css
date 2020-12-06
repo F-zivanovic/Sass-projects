@@ -21,6 +21,14 @@ a {
   a:hover {
     transition: 0.4s ease; }
 
+.line, header h1::after {
+  display: block;
+  content: "";
+  background-color: #ecd444;
+  margin: 10px auto;
+  width: 100px;
+  height: 3px; }
+
 nav {
   background: linear-gradient(to right, #6e2594, #ecd444);
   text-align: center;
@@ -42,5 +50,38 @@ nav {
           nav ul li a i:hover {
             color: #ecd444;
             transition: 0.4s ease; }
+
+header {
+  background-image: linear-gradient(rgba(110, 37, 148, 0.9), rgba(110, 37, 148, 0.9)), url(img/header3.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+  @media (max-width: 768px) {
+    header {
+      height: 80vh; } }
+  header h1 {
+    font-size: 4rem; }
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 3rem; } }
+  header button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #6e2594;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 10px; }
+    @media (max-width: 768px) {
+      header button {
+        padding: 10px 15px;
+        font-size: 1rem; } }
+    header button:hover {
+      transition: 0.4s ease;
+      background-color: #ecd444; }
 
 /*# sourceMappingURL=style.css.map */

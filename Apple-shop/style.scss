@@ -47,6 +47,35 @@ a
     }
 }
 
+.line
+{
+    display: block;
+    content: "";
+    background-color: $yellow;
+    margin: 10px auto;
+    width: 100px;
+    height: 3px;
+}
+
+// MIXINS
+@mixin btn 
+{
+    padding: 10px 20px;
+    background-color: $white;
+    color: $purple;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 10px;
+    @media(max-width:768px){
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    &:hover{
+        transition: $transition;
+        background-color: $yellow;
+    }   
+}
+
 // NAV
 nav
 {
@@ -76,5 +105,33 @@ nav
            }
        }
     }
+}
 
+// HEADER
+header
+{
+    background-image: linear-gradient(rgba(110, 37, 148,.9), rgba(110, 37, 148,.9)), url(img/header3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    @media(max-width:768px){
+        height: 80vh;
+    }
+    h1{
+        font-size: 4rem;
+        @media(max-width:768px){
+           font-size: 3rem;
+        }
+        &::after{
+            @extend .line;
+        }
+    }
+    button{
+        @include btn();
+    }
 }
