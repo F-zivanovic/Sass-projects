@@ -21,13 +21,33 @@ a {
   a:hover {
     transition: 0.4s ease; }
 
-.line, header h1::after {
+.line, header h1::after, .products article:nth-child(2) h2::after, .products article:nth-child(3) h2::after {
   display: block;
   content: "";
   background-color: #ecd444;
   margin: 10px auto;
   width: 100px;
   height: 3px; }
+
+.products-img, .products article:first-child, .products article:last-child {
+  background-image: url(img/mac.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 45vh;
+  flex: 0 0 45%; }
+  @media (max-width: 768px) {
+    .products-img, .products article:first-child, .products article:last-child {
+      display: none; } }
+
+.products-text, .products article:nth-child(2), .products article:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0 0 55%;
+  border-bottom: 1px solid #4e5062; }
+  @media (max-width: 768px) {
+    .products-text, .products article:nth-child(2), .products article:nth-child(3) {
+      flex: 0 0 100%; } }
 
 nav {
   background: linear-gradient(to right, #6e2594, #ecd444);
@@ -55,7 +75,7 @@ header {
   background-image: linear-gradient(rgba(110, 37, 148, 0.9), rgba(110, 37, 148, 0.9)), url(img/header3.jpg);
   background-position: center;
   background-size: cover;
-  height: 94vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -120,5 +140,25 @@ header {
       background-color: #4b4d5e; }
     .about article:last-child {
       background-color: #484a5a; }
+
+.products {
+  display: flex;
+  flex-wrap: wrap; }
+  .products article {
+    padding: 50px; }
+    .products article:nth-child(2) h2 {
+      font-size: 2rem;
+      letter-spacing: 2px; }
+      .products article:nth-child(2) h2::after {
+        margin: 10px 0;
+        background-color: #4e5062; }
+    .products article:nth-child(3) h2 {
+      font-size: 2rem;
+      letter-spacing: 2px; }
+      .products article:nth-child(3) h2::after {
+        margin: 10px 0;
+        background-color: #4e5062; }
+    .products article:last-child {
+      background-image: url(img/ipad.jpg); }
 
 /*# sourceMappingURL=style.css.map */

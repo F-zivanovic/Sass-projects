@@ -56,6 +56,28 @@ a
     width: 100px;
     height: 3px;
 }
+.products-img{
+    background-image: url(img/mac.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 45vh;
+    flex: 0 0 45%;
+    @media(max-width:768px){
+        display: none;
+    }
+}
+
+.products-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0 0 55%;
+    border-bottom: 1px solid $gray2;
+    @media(max-width:768px){
+        flex: 0 0 100%;
+    }
+}
 
 // MIXINS
 @mixin btn 
@@ -128,7 +150,7 @@ header
     background-image: linear-gradient(rgba(110, 37, 148,.9), rgba(110, 37, 148,.9)), url(img/header3.jpg);
     background-position: center;
     background-size: cover;
-    height: 94vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -189,3 +211,45 @@ header
     }
   
 }
+
+// PRODUCTS
+.products
+{
+    display: flex;
+    flex-wrap: wrap;
+    article{
+        padding: $padding;
+        &:first-child{
+           @extend .products-img;
+        }
+        &:nth-child(2){
+           @extend .products-text;
+            h2{
+                font-size: 2rem;
+                letter-spacing: 2px;
+                &::after{
+                    @extend .line;
+                    margin: 10px 0;
+                    background-color: $gray2;
+                }
+            }
+        }
+        &:nth-child(3){
+            @extend .products-text;
+            h2{
+                font-size: 2rem;
+                letter-spacing: 2px;
+                &::after{
+                    @extend .line;
+                    margin: 10px 0;
+                    background-color: $gray2;
+                }
+            }
+        }
+        &:last-child{
+           @extend .products-img;
+           background-image: url(img/ipad.jpg);
+        }
+    }
+}
+
