@@ -21,7 +21,7 @@ a {
   a:hover {
     transition: 0.4s ease; }
 
-.line, header h1::after, .products article:nth-child(2) h2::after, .products article:nth-child(3) h2::after, .contact h2::after {
+.line, header h1::after, .products article:nth-child(2) h2::after, .products article:nth-child(3) h2::after, .contact h2::after, footer article h3::after {
   display: block;
   content: "";
   background-color: #ecd444;
@@ -76,11 +76,11 @@ header {
   background-position: center;
   background-size: cover;
   height: 80vh;
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  color: #fff; }
+  align-items: center; }
   @media (max-width: 768px) {
     header {
       height: 80vh; } }
@@ -191,5 +191,37 @@ header {
       border: none;
       margin-top: 10px;
       height: 50px; }
+
+footer {
+  background-color: #444;
+  padding: 50px;
+  display: flex;
+  color: #fff;
+  justify-content: space-between; }
+  footer article h3 {
+    font-size: 1.6rem; }
+    footer article h3::after {
+      margin: 10px 0; }
+  footer article:first-child {
+    flex: 0 0 45%; }
+    footer article:first-child button {
+      background: none;
+      border: 2px solid #ecd444;
+      color: #ecd444;
+      padding: 10px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin: 20px 0; }
+      footer article:first-child button:hover {
+        transition: 0.4s ease;
+        background-color: #ecd444;
+        color: #515365; }
+  footer article:last-child {
+    flex: 0 0 45%;
+    color: #fff; }
+    footer article:last-child a {
+      color: #fff; }
+      footer article:last-child a i {
+        padding: 15px 0; }
 
 /*# sourceMappingURL=style.css.map */
