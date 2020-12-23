@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Nanum Myeongjo', serif; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    transition: 0.4 ease; }
+
+.container {
+  width: 90%;
+  margin: auto; }
+
+/*# sourceMappingURL=style.css.map */
