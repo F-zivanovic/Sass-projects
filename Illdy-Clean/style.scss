@@ -6,11 +6,12 @@
 $bodyFont:'Montserrat', sans-serif;
 $sizeFont:16px;
 $transition: .4 ease;
-$padding:20px 0px;
+$padding:50px 0px;
 $white: #fff;
 $yellow: #f1d204;
 $purple:#6a4d8a;
 $gray:#444;
+
 
 
 // DEFAULT STYLES
@@ -115,6 +116,17 @@ a
     }
 
 }
+@mixin project-section 
+{
+    background-image: url(img/front-page-project-1.jpg);
+    background-position: center;
+    background-size: cover;
+    &:hover
+    {
+        transition-duration: 2s;
+        transform: scale(1.1);
+    }   
+}
 
 // HEADER
 header
@@ -193,5 +205,52 @@ header
             }
        }
      
+    }
+}
+
+
+// PROJECTS
+.projects
+{
+    text-align: center;
+    padding: $padding;
+    h3 
+    {
+        font-size: 2rem;
+    }
+    p 
+    {
+        margin: 20px 0;
+    }
+    .images
+    {
+        display: grid;
+        width: 100%;
+        height: 400px;
+        grid-template-columns: auto auto auto auto;
+        @media(max-width:768px)
+        {
+            grid-template-columns: auto auto;
+            grid-template-rows: 75vh 75vh;                      
+        }
+        .img1 
+        {
+          @include project-section();
+        }
+        .img2 
+        {
+            @include project-section();
+            background-image: url(img/front-page-project-1.png);
+        }
+        .img3
+        {
+            @include project-section();
+            background-image: url(img/front-page-project-2.jpg);
+        }
+        .img4
+        {
+            @include project-section();
+            background-image: url(img/front-page-project-2.png);
+        }
     }
 }

@@ -83,7 +83,7 @@ header {
   to {
     color: #6a4d8a; } }
     header hgroup .btn-area {
-      padding: 20px 0px; }
+      padding: 50px 0px; }
       header hgroup .btn-area .btn {
         background-color: rgba(0, 0, 0, 0.2);
         color: #fff;
@@ -108,5 +108,53 @@ header {
         header hgroup .btn-area .btn1:hover {
           background-color: #6a4d8a;
           transition: 0.4 ease; }
+
+.projects {
+  text-align: center;
+  padding: 50px 0px; }
+  .projects h3 {
+    font-size: 2rem; }
+  .projects p {
+    margin: 20px 0; }
+  .projects .images {
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-columns: auto auto auto auto; }
+    @media (max-width: 768px) {
+      .projects .images {
+        grid-template-columns: auto auto;
+        grid-template-rows: 75vh 75vh; } }
+    .projects .images .img1 {
+      background-image: url(img/front-page-project-1.jpg);
+      background-position: center;
+      background-size: cover; }
+      .projects .images .img1:hover {
+        transition-duration: 2s;
+        transform: scale(1.1); }
+    .projects .images .img2 {
+      background-image: url(img/front-page-project-1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-image: url(img/front-page-project-1.png); }
+      .projects .images .img2:hover {
+        transition-duration: 2s;
+        transform: scale(1.1); }
+    .projects .images .img3 {
+      background-image: url(img/front-page-project-1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-image: url(img/front-page-project-2.jpg); }
+      .projects .images .img3:hover {
+        transition-duration: 2s;
+        transform: scale(1.1); }
+    .projects .images .img4 {
+      background-image: url(img/front-page-project-1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-image: url(img/front-page-project-2.png); }
+      .projects .images .img4:hover {
+        transition-duration: 2s;
+        transform: scale(1.1); }
 
 /*# sourceMappingURL=style.css.map */
