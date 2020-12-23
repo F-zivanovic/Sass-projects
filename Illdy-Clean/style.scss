@@ -12,7 +12,7 @@ $yellow: #f1d204;
 $purple:#6a4d8a;
 $gray:#444;
 $red:rgb(241, 139, 109);
-
+$background:#222f36;
 
 
 // DEFAULT STYLES
@@ -332,6 +332,65 @@ header
                     font-size: 1.6rem;
                 }
 
+            }
+        }
+    }
+}
+
+// NEWS
+.news
+{
+    text-align: center;
+    padding: $padding;
+    background-color: $background;
+    color: $white;
+    h3 
+    {
+        font-size: 2rem;
+    }
+    .row
+    {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        article
+        {
+            flex: 0 0 30%;
+            @media(max-width:768px)
+            {
+                flex: 0 0 100%;
+            }
+            &:hover
+            {
+                transition-duration: 2s;
+                transform: rotateY(360deg);
+            }
+            img 
+            {
+                width: 100%;
+            }
+            .text
+            {
+                background-color: $white;
+                color: $gray;
+                height: 300px;
+                @media(max-width:768px)
+                {
+                    height: 200px;
+                }
+                h4 
+                {
+                    font-size: 1.5rem;
+                    padding: 20px 20px;
+                    text-align: left;
+                    
+                }
+                p
+                {
+                    padding: 20px 20px;
+                    text-align: left;
+                }
             }
         }
     }

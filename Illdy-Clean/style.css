@@ -195,4 +195,41 @@ header {
       padding: 10px 0;
       font-size: 1.6rem; }
 
+.news {
+  text-align: center;
+  padding: 50px 0px;
+  background-color: #222f36;
+  color: #fff; }
+  .news h3 {
+    font-size: 2rem; }
+  .news .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .news .row article {
+      flex: 0 0 30%; }
+      @media (max-width: 768px) {
+        .news .row article {
+          flex: 0 0 100%; } }
+      .news .row article:hover {
+        transition-duration: 2s;
+        transform: rotateY(360deg); }
+      .news .row article img {
+        width: 100%; }
+      .news .row article .text {
+        background-color: #fff;
+        color: #444;
+        height: 300px; }
+        @media (max-width: 768px) {
+          .news .row article .text {
+            height: 200px; } }
+        .news .row article .text h4 {
+          font-size: 1.5rem;
+          padding: 20px 20px;
+          text-align: left; }
+        .news .row article .text p {
+          padding: 20px 20px;
+          text-align: left; }
+
 /*# sourceMappingURL=style.css.map */
