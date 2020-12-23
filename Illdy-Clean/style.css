@@ -124,7 +124,7 @@ header {
     @media (max-width: 768px) {
       .projects .images {
         grid-template-columns: auto auto;
-        grid-template-rows: 75vh 75vh; } }
+        grid-template-rows: 30vh 30vh; } }
     .projects .images .img1 {
       background-image: url(img/front-page-project-1.jpg);
       background-position: center;
@@ -156,5 +156,43 @@ header {
       .projects .images .img4:hover {
         transition-duration: 2s;
         transform: scale(1.1); }
+
+.services {
+  padding: 50px 0px;
+  text-align: center; }
+  .services h3 {
+    font-size: 2rem; }
+  .services .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap; }
+    .services .container article {
+      flex: 0 0 30%;
+      margin-top: 20px; }
+      @media (max-width: 768px) {
+        .services .container article {
+          flex: 0 0 100%; } }
+    .services .container article:first-child i {
+      color: #f18b6d;
+      font-size: 2rem; }
+    .services .container article:first-child h4 {
+      color: #f18b6d;
+      padding: 10px 0;
+      font-size: 1.6rem; }
+    .services .container article:nth-child(2) i {
+      color: #f1d204;
+      font-size: 2rem; }
+    .services .container article:nth-child(2) h4 {
+      color: #f1d204;
+      padding: 10px 0;
+      font-size: 1.6rem; }
+    .services .container article:nth-child(3) i {
+      color: #6a4d8a;
+      font-size: 2rem; }
+    .services .container article:nth-child(3) h4 {
+      color: #6a4d8a;
+      padding: 10px 0;
+      font-size: 1.6rem; }
 
 /*# sourceMappingURL=style.css.map */

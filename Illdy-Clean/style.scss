@@ -11,6 +11,7 @@ $white: #fff;
 $yellow: #f1d204;
 $purple:#6a4d8a;
 $gray:#444;
+$red:rgb(241, 139, 109);
 
 
 
@@ -231,7 +232,7 @@ header
         @media(max-width:768px)
         {
             grid-template-columns: auto auto;
-            grid-template-rows: 75vh 75vh;                      
+            grid-template-rows: 30vh 30vh;                      
         }
         .img1 
         {
@@ -251,6 +252,87 @@ header
         {
             @include project-section();
             background-image: url(img/front-page-project-2.png);
+        }
+    }
+}
+
+// SERVICES
+.services
+{
+    padding: $padding;
+    text-align: center;
+    h3 
+    {
+        font-size: 2rem;
+    }
+    .container
+    {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        flex-wrap: wrap;
+        article
+        {
+            flex: 0 0 30%;
+            margin-top: 20px;
+            @media(max-width:768px)
+            {
+                flex: 0 0 100%;
+            }
+        }
+        article
+        {
+            &:first-child
+            {
+                i 
+                {
+                    color: $red;
+                    font-size: 2rem;
+                }
+                h4 
+                {
+                    color: $red;
+                    padding: 10px 0;
+                    font-size: 1.6rem;
+                }
+
+            }
+        }
+        article
+        {
+            &:nth-child(2)
+            {
+                i 
+                {
+                    color: $yellow;
+                    font-size: 2rem;
+                }
+                h4 
+                {
+                    color: $yellow;
+                    padding: 10px 0;
+                    font-size: 1.6rem;
+                }
+
+            }
+        }
+        article
+        {
+            &:nth-child(3)
+            {
+                i 
+                {
+                    color: $purple;
+                    font-size: 2rem;
+                }
+                h4 
+                {
+                    color: $purple;
+                    padding: 10px 0;
+                    font-size: 1.6rem;
+                }
+
+            }
         }
     }
 }
