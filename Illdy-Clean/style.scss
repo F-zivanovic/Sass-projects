@@ -139,7 +139,7 @@ header
     height: 100vh;
     @media(max-width:768px)
     {
-        height: 80vh;
+        height: 90vh;
     }
     nav 
     {
@@ -150,7 +150,7 @@ header
         @media(max-width:768px)
         {
             flex-direction: column;
-            padding: 20px 20px;
+            padding: 20px 15px;
         }
         ul 
         {
@@ -177,8 +177,12 @@ header
        justify-content: center;
        align-items: center;
        flex-direction: column;
-       height: 70vh;
+       height: 80vh;
        color: $white;
+       @media(max-width:768px)
+       {
+        height: 60vh;
+       }
        h1 
        {
            font-size: 5rem;
@@ -393,5 +397,78 @@ header
                 }
             }
         }
+    }
+}
+
+
+// TEAM
+.team
+{
+    padding: $padding;
+    text-align: center;
+
+    h3{
+        font-size: 2rem;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap:wrap ;
+        justify-content: space-between;
+        margin-top: 40px;
+
+        article{
+            flex: 0 0 30%;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            &:first-child{
+                 
+                p{
+                    color: $red;
+                    font-weight: bolder;
+                }
+
+                i{
+                    font-size: 2rem;
+                    padding: 20px 20px 0 0;
+                    color: $red;
+                }
+            }
+            &:nth-child(2){
+                 
+                p{
+                    color: $purple;
+                    font-weight: bolder;
+                }
+
+                i{
+                    font-size: 2rem;
+                    padding: 20px 20px 0 0;
+                    color: $purple;
+                }
+            }
+            &:nth-child(3){
+                 
+                p{
+                    color: $yellow;
+                    font-weight: bolder;
+                }
+                
+                i{
+                    font-size: 2rem;
+                    padding: 20px 20px 0 0;
+                    color: $yellow;
+                }
+            }
+
+            h4{
+                font-size: 1.5rem;
+                padding: 15px 0;
+            }
+           
+        }
+
     }
 }

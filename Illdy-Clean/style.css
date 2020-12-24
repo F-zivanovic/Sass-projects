@@ -33,7 +33,7 @@ header {
   height: 100vh; }
   @media (max-width: 768px) {
     header {
-      height: 80vh; } }
+      height: 90vh; } }
   header nav {
     padding: 20px 50px;
     display: flex;
@@ -42,7 +42,7 @@ header {
     @media (max-width: 768px) {
       header nav {
         flex-direction: column;
-        padding: 20px 20px; } }
+        padding: 20px 15px; } }
     header nav ul {
       display: flex; }
       header nav ul li {
@@ -57,8 +57,11 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
     color: #fff; }
+    @media (max-width: 768px) {
+      header hgroup {
+        height: 60vh; } }
     header hgroup h1 {
       font-size: 5rem;
       animation-name: animation1;
@@ -231,5 +234,45 @@ header {
         .news .row article .text p {
           padding: 20px 20px;
           text-align: left; }
+
+.team {
+  padding: 50px 0px;
+  text-align: center; }
+  .team h3 {
+    font-size: 2rem; }
+  .team .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px; }
+    .team .container article {
+      flex: 0 0 30%; }
+      @media (max-width: 768px) {
+        .team .container article {
+          flex: 0 0 100%; } }
+      .team .container article:first-child p {
+        color: #f18b6d;
+        font-weight: bolder; }
+      .team .container article:first-child i {
+        font-size: 2rem;
+        padding: 20px 20px 0 0;
+        color: #f18b6d; }
+      .team .container article:nth-child(2) p {
+        color: #6a4d8a;
+        font-weight: bolder; }
+      .team .container article:nth-child(2) i {
+        font-size: 2rem;
+        padding: 20px 20px 0 0;
+        color: #6a4d8a; }
+      .team .container article:nth-child(3) p {
+        color: #f1d204;
+        font-weight: bolder; }
+      .team .container article:nth-child(3) i {
+        font-size: 2rem;
+        padding: 20px 20px 0 0;
+        color: #f1d204; }
+      .team .container article h4 {
+        font-size: 1.5rem;
+        padding: 15px 0; }
 
 /*# sourceMappingURL=style.css.map */
