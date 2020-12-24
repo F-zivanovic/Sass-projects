@@ -257,6 +257,9 @@ header {
         font-size: 2rem;
         padding: 20px 20px 0 0;
         color: #f18b6d; }
+        .team .container article:first-child i:hover {
+          transition-duration: 2s;
+          transform: rotate(360deg); }
       .team .container article:nth-child(2) p {
         color: #6a4d8a;
         font-weight: bolder; }
@@ -264,6 +267,9 @@ header {
         font-size: 2rem;
         padding: 20px 20px 0 0;
         color: #6a4d8a; }
+        .team .container article:nth-child(2) i:hover {
+          transition-duration: 2s;
+          transform: rotate(360deg); }
       .team .container article:nth-child(3) p {
         color: #f1d204;
         font-weight: bolder; }
@@ -271,8 +277,37 @@ header {
         font-size: 2rem;
         padding: 20px 20px 0 0;
         color: #f1d204; }
+        .team .container article:nth-child(3) i:hover {
+          transition-duration: 2s;
+          transform: rotate(360deg); }
       .team .container article h4 {
         font-size: 1.5rem;
         padding: 15px 0; }
+
+footer {
+  padding: 50px 0px;
+  background-color: #292825;
+  color: #fff; }
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    footer .container article {
+      flex: 0 0 30%;
+      margin-top: 20px; }
+      @media (max-width: 768px) {
+        footer .container article {
+          flex: 0 0 100%; } }
+      footer .container article h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        margin-bottom: 10px; }
+      footer .container article ul li {
+        padding: 5px 0; }
+        footer .container article ul li a {
+          color: #fff; }
+          footer .container article ul li a:hover {
+            color: #6a4d8a; }
 
 /*# sourceMappingURL=style.css.map */
