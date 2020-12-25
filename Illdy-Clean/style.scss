@@ -3,18 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 // VARIABLES
-$bodyFont:'Montserrat', sans-serif;
-$sizeFont:16px;
-$transition: .4 ease;
-$padding:50px 0px;
-$white: #fff;
-$yellow: #f1d204;
-$purple:#6a4d8a;
-$gray:#444;
-$red:rgb(241, 139, 109);
-$background:#222f36;
-$gray1:rgb(232, 232, 232);
-$footer:#292825;
+@import "variables";
 
 
 // DEFAULT STYLES
@@ -129,6 +118,13 @@ a
         transition-duration: 2s;
         transform: scale(1.1);
     }   
+}
+
+@mixin flex 
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
 }
 
 // HEADER
