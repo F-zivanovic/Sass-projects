@@ -2,7 +2,7 @@
 
 
 
-## This repo contains fully respoosnive static web site editing with Sass. 
+## This repo contains fully respoosnive static web sites with animations editing with Sass and flexbox layouts 
 
 
 
