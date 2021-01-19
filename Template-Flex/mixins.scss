@@ -1,0 +1,15 @@
+// MIXINS
+@mixin btn {
+    background-color: $red;
+    color: $white;
+    padding: 10px 30px;
+    border: none;
+    font-size: 1.2rem;
+
+    &:hover{
+        cursor: pointer;
+        background-color: $gray;
+        transition: $transition;
+    }
+    
+}
