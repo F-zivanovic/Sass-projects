@@ -18,4 +18,72 @@ ul {
 a {
   text-decoration: none; }
 
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh; }
+  header nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+    margin: auto;
+    width: 90%;
+    padding: 10px 20px; }
+    header nav .logo {
+      line-height: 0.9;
+      color: black; }
+      header nav .logo::first-letter {
+        color: red; }
+      header nav .logo span {
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        font-weight: 700; }
+    header nav ul {
+      display: flex;
+      align-items: center; }
+      header nav ul li {
+        padding: 0 30px; }
+        @media (max-width: 768px) {
+          header nav ul li {
+            padding: 0 10px; } }
+        header nav ul li a {
+          text-transform: uppercase;
+          font-size: 1.2rem;
+          color: #a7a7a7; }
+          header nav ul li a:hover {
+            color: red; }
+  header hgroup {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    padding: 0 20px; }
+    header hgroup h1 {
+      padding-bottom: 10px;
+      font-size: 3rem;
+      letter-spacing: 2px; }
+      @media (max-width: 768px) {
+        header hgroup h1 {
+          font-size: 1.8rem; } }
+    header hgroup p {
+      font-size: 1.2rem;
+      padding-bottom: 20px; }
+    header hgroup button {
+      background-color: red;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      font-size: 1.2rem; }
+      header hgroup button:hover {
+        cursor: pointer;
+        background-color: #a7a7a7;
+        transition: 0.4 ease; }
+
 /*# sourceMappingURL=style.css.map */
