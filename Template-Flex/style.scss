@@ -218,15 +218,45 @@ header{
           padding: 10px 0;
           font-size: 1.4rem;
       }
-  }
-  
-    
+  }  
 }
 
 
+
+
 //BACKGROUND
-// .background{
-//     background-image: url(img/three.jpg);
-//     background-position: center;
-//     background-size: cover;
-// }
+ .background{
+     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/three.jpg);
+     background-position: center;
+     background-size: cover;
+     height: 60vh;
+
+     hgroup{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: flex-end;
+         text-align: right;
+         height: 60vh;
+         padding-right: 50px;
+         color: $white;
+
+         P{
+             &:first-child{
+                 color: $red;
+                 font-size: 1.4rem;
+                 font-weight: 700;
+             }
+         }
+
+         h3{
+             padding: 20px 0;
+             font-size: 2rem;
+         }
+
+         button{
+             @include btn;
+             margin-top: 20px;
+         }
+     }
+ }

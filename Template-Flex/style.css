@@ -162,4 +162,37 @@ header {
       padding: 10px 0;
       font-size: 1.4rem; }
 
+.background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/three.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh; }
+  .background hgroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    height: 60vh;
+    padding-right: 50px;
+    color: white; }
+    .background hgroup P:first-child {
+      color: red;
+      font-size: 1.4rem;
+      font-weight: 700; }
+    .background hgroup h3 {
+      padding: 20px 0;
+      font-size: 2rem; }
+    .background hgroup button {
+      background-color: red;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      font-size: 1.2rem;
+      margin-top: 20px; }
+      .background hgroup button:hover {
+        cursor: pointer;
+        background-color: #a7a7a7;
+        transition: 0.4 ease; }
+
 /*# sourceMappingURL=style.css.map */
