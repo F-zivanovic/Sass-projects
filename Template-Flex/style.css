@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Gugi|Kaushan+Script|Source+Sans+Pro");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.4;
+  font-size: 16px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Kaushan Script', cursive; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */
