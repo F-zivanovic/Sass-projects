@@ -137,4 +137,29 @@ header {
       background-size: cover;
       height: 50vh; }
 
+.numbers {
+  background-image: url(img/section8.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .numbers article {
+    padding: 50px 20px;
+    flex: 0 0 22%;
+    text-align: center; }
+    @media (max-width: 768px) {
+      .numbers article {
+        flex: 0 0 100%; } }
+    .numbers article span:first-child {
+      color: red;
+      font-size: 3rem;
+      font-style: italic;
+      font-weight: 700; }
+    .numbers article p {
+      font-weight: 700; }
+    .numbers article h4 {
+      padding: 10px 0;
+      font-size: 1.4rem; }
+
 /*# sourceMappingURL=style.css.map */

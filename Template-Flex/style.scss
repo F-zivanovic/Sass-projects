@@ -183,3 +183,50 @@ header{
         }
     }
 }
+
+// NUMBERS
+.numbers
+{
+  background-image: url(img/section8.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  article{
+      padding: $padding;
+      flex: 0 0 22%;
+      text-align: center;
+      @media(max-width:768px){
+          flex: 0 0 100%;
+      }
+
+      span{
+          &:first-child{
+              color: $red;
+              font-size: 3rem;
+              font-style: italic;
+              font-weight: 700;
+          }
+      }
+      p{
+          font-weight: 700;
+      }
+
+      h4{
+          padding: 10px 0;
+          font-size: 1.4rem;
+      }
+  }
+  
+    
+}
+
+
+//BACKGROUND
+// .background{
+//     background-image: url(img/three.jpg);
+//     background-position: center;
+//     background-size: cover;
+// }
