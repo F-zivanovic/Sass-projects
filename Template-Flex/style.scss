@@ -309,3 +309,90 @@ header{
     }
 
 }
+
+// GALLERY
+.gallery{
+    article{
+        background-color: $red;
+        height: 20vh;
+        text-align: center;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        P{
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        h1{
+            font-size: 2.4rem;
+        }
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 25% 1fr;
+        grid-template-rows: 50vh 50vh;
+      
+
+        span{
+            &:first-child{
+                background-image: url(img/project3.jpg);
+                background-position: center;
+                background-size: cover;
+                grid-area: 1/1/3/2;
+            }
+        }
+        span{
+            &:nth-child(2){
+                background-image: url(img/project9.jpg);
+                background-position: center;
+                background-size: cover;
+                grid-area: 1/2/2/3;
+              
+            }
+        }
+        span{
+            &:nth-child(3){
+                background-image: url(img/project4.jpg);
+                background-position: center;
+                background-size: cover;
+                grid-area: 2/2/3/3;
+                
+            }
+        }
+        span{
+            &:nth-child(4){
+                background-image: url(img/project1.jpg);
+                background-position: center;
+                background-size: cover;
+                grid-area: 1/3/2/4;
+                
+            }
+        }
+        span{
+            &:nth-child(5){
+                background-image: url(img/project11.jpg);
+                background-position: center;
+                background-size: cover;
+                grid-area: 2/3/3/4;
+                
+            }
+        }
+     
+    }
+
+    .row{
+        background-color: $red;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: $padding;
+        font-size: 1.5rem;
+    }
+}
