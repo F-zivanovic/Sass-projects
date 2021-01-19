@@ -18,6 +18,14 @@ ul {
 a {
   text-decoration: none; }
 
+.line, .about article:first-child p:first-child::after {
+  content: "";
+  display: block;
+  background-color: red;
+  margin: 10px 0;
+  width: 100px;
+  height: 2px; }
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/header.jpg);
   background-position: center;
@@ -85,5 +93,48 @@ header {
         cursor: pointer;
         background-color: #a7a7a7;
         transition: 0.4 ease; }
+
+.about {
+  display: flex;
+  flex-wrap: wrap; }
+  .about article {
+    flex: 0 0 50; }
+    @media (max-width: 768px) {
+      .about article {
+        flex: 0 0 100%; } }
+    .about article:first-child {
+      padding: 100px 20px;
+      justify-content: center;
+      align-items: flex-start; }
+      .about article:first-child p:first-child {
+        color: red;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2rem; }
+    .about article h3 {
+      font-size: 1.5rem;
+      padding: 10px 0px; }
+    .about article button {
+      background-color: red;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      font-size: 1.2rem;
+      margin-top: 20px; }
+      .about article button:hover {
+        cursor: pointer;
+        background-color: #a7a7a7;
+        transition: 0.4 ease; }
+  .about article {
+    flex: 0 0 50%; }
+    @media (max-width: 768px) {
+      .about article {
+        flex: 0 0 100%; } }
+    .about article:nth-child(2) {
+      background-image: url(img/one.jpg);
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      height: 50vh; }
 
 /*# sourceMappingURL=style.css.map */

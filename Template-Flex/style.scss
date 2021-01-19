@@ -36,6 +36,15 @@ a{
     text-decoration: none;
 }
 
+.line{
+    content: "";
+    display: block;
+    background-color: $red;
+    margin: 10px 0;
+    width: 100px;
+    height: 2px;
+}
+
 //HEADER
 header{
     background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/header.jpg);
@@ -119,5 +128,58 @@ header{
         button{
           @include btn;
         }   
+    }
+}
+
+// ABOUT
+.about{
+    display: flex;
+    flex-wrap: wrap;
+
+    article{
+        flex: 0 0 50;
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+        &:first-child{
+            padding: 100px 20px;
+            justify-content: center;
+            align-items: flex-start;
+            p{
+                &:first-child{
+                    color: $red;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                    &::after{
+                        @extend .line;
+                    }
+                }
+               
+            }
+        }
+        h3{
+            font-size: 1.5rem;
+            padding: 10px 0px;
+        }
+
+        button{
+            @include btn;
+            margin-top: 20px;
+        }
+    }
+
+    article{
+        flex: 0 0 50%;
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+        &:nth-child(2){
+            background-image: url(img/one.jpg);
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            height: 50vh;
+        }
     }
 }
