@@ -90,3 +90,32 @@ nav{
         }
     }
 }
+
+// HEADER
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+
+    h1{
+        font-size: 3rem;
+        font-weight: 300;
+        text-shadow: 0 0 15px $black;
+    }
+
+    p{
+        font-weight: 100;
+        font-size: 1.4rem;
+    }
+
+    button{
+        @include btn;
+    }
+}
