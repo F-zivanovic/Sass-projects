@@ -261,4 +261,19 @@ header {
         background-color: #c66995;
         transition: 0.4 ease; }
 
+.continents {
+  background-color: #69c6ba; }
+  .continents ul {
+    display: flex; }
+    .continents ul li {
+      flex: 1;
+      align-items: center; }
+      .continents ul li:hover {
+        background-color: #c66995;
+        transition: .4 ease;
+        transition-duration: 2s; }
+      .continents ul li a img {
+        padding: 40px 0;
+        width: 80%; }
+
 /*# sourceMappingURL=style.css.map */

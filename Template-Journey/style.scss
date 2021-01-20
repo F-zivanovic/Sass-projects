@@ -218,3 +218,33 @@ header{
     }
 
 }
+
+// CONTINENTS
+.continents{
+
+    background-color: $lighBlue;
+    ul{
+        display: flex;
+        li{
+            flex: 1;
+            align-items: center;
+            &:hover{
+                background-color: $pink;
+                transition: .4 ease;
+                transition-duration: 2s;
+            }
+            a{
+                img{
+                    padding: 40px 0;
+                    width: 80%;
+                    // width: 100%;
+                }
+            }
+        }
+    }
+   
+
+  }
+  
+
+  
