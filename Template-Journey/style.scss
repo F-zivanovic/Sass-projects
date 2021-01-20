@@ -1,6 +1,6 @@
 // GOOGLE FONTS
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600;300&display=swap');
 
 
 // VARIABLES
@@ -40,7 +40,7 @@ a{
 // NAV
 nav{
     background-color: $white;
-    padding: 30px 50px;
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,4 +118,103 @@ header{
     button{
         @include btn;
     }
+}
+
+// ABOUT
+.about{
+    padding: $padding;
+    text-align: center;
+    background-color: $gray;
+
+    h1{
+        font-weight: 300;
+        font-size: 2rem;
+
+        span{
+            font-weight: 600;
+        }
+    }
+    p{
+        font-size: 0.8rem;
+    }
+
+    button{
+        @include btn;
+    }
+}
+
+// TOP PLACES
+.places{
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+
+        article{
+            &:first-child{
+                background-image: url(img/tm-img-01.jpg);
+                background-position: center;
+                background-size: cover;
+                width: 100%;
+                height: 50vh;
+                flex: 0 0 50%;
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+            }
+
+            &:nth-child(2){
+                flex: 0 0 50%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                flex-direction: column;
+                background-color: $lighBlue;
+                padding: 50px;
+                height: 50vh;
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                    margin: 0;
+                    padding: 30px;
+                }
+
+                h3{
+                    color: $white;
+                    font-size: 2rem;
+                    font-weight: 300;
+                }
+                p{
+                    color: $white;
+                }
+
+                button{
+                    @include btn;
+                    background-color: $white;
+                    color: $lighBlue;
+
+                }
+
+            }
+
+            &:nth-child(3){
+                @include place1;
+                background-image: url(img/tm-img-03.jpg);
+            }
+
+            &:nth-child(4){
+                @include place;
+                background-color:$pink;
+                
+            }
+            &:nth-child(5){
+                @include place1;
+                background-image: url(img/tm-img-06.jpg);
+            }
+            &:nth-child(6){
+                @include place;
+                
+            }
+        }
+    }
+
 }

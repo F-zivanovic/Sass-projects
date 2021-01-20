@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600;300&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -21,7 +21,7 @@ a {
 
 nav {
   background-color: white;
-  padding: 30px 50px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -89,5 +89,176 @@ header {
       border-radius: 0px 20px 0px 20px;
       background-color: #c66995;
       transition: 0.4 ease; }
+
+.about {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #efefef; }
+  .about h1 {
+    font-weight: 300;
+    font-size: 2rem; }
+    .about h1 span {
+      font-weight: 600; }
+  .about p {
+    font-size: 0.8rem; }
+  .about button {
+    border: none;
+    color: white;
+    background-color: #69c6ba;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 20px 0px 20px 0px; }
+    .about button:hover {
+      border-radius: 0px 20px 0px 20px;
+      background-color: #c66995;
+      transition: 0.4 ease; }
+
+.places .row {
+  display: flex;
+  flex-wrap: wrap; }
+  .places .row article:first-child {
+    background-image: url(img/tm-img-01.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    flex: 0 0 50%; }
+    @media (max-width: 768px) {
+      .places .row article:first-child {
+        flex: 0 0 100%; } }
+  .places .row article:nth-child(2) {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #69c6ba;
+    padding: 50px;
+    height: 50vh; }
+    @media (max-width: 768px) {
+      .places .row article:nth-child(2) {
+        flex: 0 0 100%;
+        margin: 0;
+        padding: 30px; } }
+    .places .row article:nth-child(2) h3 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 300; }
+    .places .row article:nth-child(2) p {
+      color: white; }
+    .places .row article:nth-child(2) button {
+      border: none;
+      color: white;
+      background-color: #69c6ba;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-top: 20px;
+      font-weight: 600;
+      border-radius: 20px 0px 20px 0px;
+      background-color: white;
+      color: #69c6ba; }
+      .places .row article:nth-child(2) button:hover {
+        border-radius: 0px 20px 0px 20px;
+        background-color: #c66995;
+        transition: 0.4 ease; }
+  .places .row article:nth-child(3) {
+    background-image: url(img/tm-img-01.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    flex: 0 0 50%;
+    background-image: url(img/tm-img-03.jpg); }
+    @media (max-width: 768px) {
+      .places .row article:nth-child(3) {
+        flex: 0 0 100%; } }
+  .places .row article:nth-child(4) {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #69c6ba;
+    padding: 50px;
+    height: 50vh;
+    background-color: #c66995; }
+    @media (max-width: 768px) {
+      .places .row article:nth-child(4) {
+        flex: 0 0 100%;
+        margin: 0;
+        padding: 30px; } }
+    .places .row article:nth-child(4) h3 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 300; }
+    .places .row article:nth-child(4) p {
+      color: white; }
+    .places .row article:nth-child(4) button {
+      border: none;
+      color: white;
+      background-color: #69c6ba;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-top: 20px;
+      font-weight: 600;
+      border-radius: 20px 0px 20px 0px;
+      background-color: white;
+      color: #69c6ba; }
+      .places .row article:nth-child(4) button:hover {
+        border-radius: 0px 20px 0px 20px;
+        background-color: #c66995;
+        transition: 0.4 ease; }
+  .places .row article:nth-child(5) {
+    background-image: url(img/tm-img-01.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    flex: 0 0 50%;
+    background-image: url(img/tm-img-06.jpg); }
+    @media (max-width: 768px) {
+      .places .row article:nth-child(5) {
+        flex: 0 0 100%; } }
+  .places .row article:nth-child(6) {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: #69c6ba;
+    padding: 50px;
+    height: 50vh; }
+    @media (max-width: 768px) {
+      .places .row article:nth-child(6) {
+        flex: 0 0 100%;
+        margin: 0;
+        padding: 30px; } }
+    .places .row article:nth-child(6) h3 {
+      color: white;
+      font-size: 2rem;
+      font-weight: 300; }
+    .places .row article:nth-child(6) p {
+      color: white; }
+    .places .row article:nth-child(6) button {
+      border: none;
+      color: white;
+      background-color: #69c6ba;
+      padding: 10px 30px;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      margin-top: 20px;
+      font-weight: 600;
+      border-radius: 20px 0px 20px 0px;
+      background-color: white;
+      color: #69c6ba; }
+      .places .row article:nth-child(6) button:hover {
+        border-radius: 0px 20px 0px 20px;
+        background-color: #c66995;
+        transition: 0.4 ease; }
 
 /*# sourceMappingURL=style.css.map */
