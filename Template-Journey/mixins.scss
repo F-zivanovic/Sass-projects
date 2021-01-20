@@ -63,3 +63,51 @@
     }
     
 }
+
+@mixin products1 {
+    flex: 0 0 30%;
+    background-image: url(img/tm-img-01.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    @media(max-width:768px){
+        flex: 0 0 100%;
+    }
+}
+
+@mixin products2 {
+    flex: 0 0 50%;
+                border: 3px solid $gray;
+                padding-left: 50px;
+                padding-top: 50px;
+                @media(max-width:768px){
+                    flex: 0 0 100%;
+                }
+
+                h3{
+                    font-size: 1.5rem;
+                }
+                
+                span{
+                    padding: 20px 0px;
+                    color: red;
+                    text-transform: uppercase;
+                }
+
+}
+
+@mixin products3 {
+    flex: 0 0 15%;
+    background-color: $lighBlue;
+    color: $white;
+    font-size: 2rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width:768px){
+        flex: 0 0 100%;
+        
+    }
+}
