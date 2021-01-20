@@ -19,4 +19,42 @@ ul {
 a {
   text-decoration: none; }
 
+nav {
+  background-color: white;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (max-width: 768px) {
+    nav {
+      padding: 30px 10px;
+      justify-content: space-evenly; } }
+  nav .logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase; }
+    nav .logo h1 {
+      letter-spacing: 2px;
+      font-weight: 700;
+      font-size: 2rem; }
+      @media (max-width: 768px) {
+        nav .logo h1 {
+          font-size: 1.5rem; } }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      padding: 0 30px;
+      border-right: 2px solid black; }
+      @media (max-width: 768px) {
+        nav ul li {
+          padding: 0 5px; } }
+      nav ul li a {
+        color: black;
+        text-transform: uppercase; }
+        nav ul li a:hover {
+          color: #69c6ba;
+          transition: 0.4 ease; }
+      nav ul li .active {
+        color: #69c6ba; }
+
 /*# sourceMappingURL=style.css.map */

@@ -11,21 +11,21 @@
 
 
 // DEFAULT STYLES
-
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 body{
+
     line-height: 1.5;
     font-family: 'Roboto Mono', monospace;
     font-size: $fSize;
-
-    
 }
 
 h1,h2,h3,h4,h5,h6{
+
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -35,4 +35,58 @@ ul{
 
 a{
     text-decoration: none;
+}
+
+// NAV
+nav{
+    background-color: $white;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media(max-width:768px){
+        padding: 30px 10px;
+        justify-content: space-evenly;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        h1{
+            letter-spacing: 2px;
+            font-weight: 700;
+            font-size: 2rem;
+            @media(max-width:768px){
+                font-size: 1.5rem;
+            }
+        }
+
+
+    }
+
+    ul{
+        display: flex;
+
+        li{
+            padding: 0 30px;
+            border-right: 2px solid $black;
+            @media(max-width:768px){
+                padding: 0 5px;
+            }
+
+            a{
+                color: $black;
+                text-transform: uppercase;
+                &:hover{
+                    color: $lighBlue;
+                    transition: $transition;
+                }
+            }
+            .active{
+                color: $lighBlue;
+            }
+        }
+    }
 }
