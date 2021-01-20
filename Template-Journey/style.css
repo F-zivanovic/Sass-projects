@@ -394,4 +394,12 @@ header {
         .hotels .row article:nth-child(9) {
           flex: 0 0 100%; } }
 
+footer {
+  background-color: #69c6ba;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem; }
+
 /*# sourceMappingURL=style.css.map */
