@@ -1,0 +1,36 @@
+// VARIABLES FILE
+@import 'variables.scss';
+
+// MIXINS FILE
+@import 'mixins.scss';
+
+
+// DEFAULT STYLES
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: $fontFamily;
+    line-height: 1.6;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    &:hover{
+        transition: $transition;
+    }
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}

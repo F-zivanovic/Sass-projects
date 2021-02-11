@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    transition: 0.4s ease; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+/*# sourceMappingURL=style.css.map */
