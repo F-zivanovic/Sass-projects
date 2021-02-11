@@ -69,3 +69,41 @@ nav{
       @include btn;
     }
 }
+
+// HEADER
+header{
+    display: flex;
+    flex-direction: column;
+    // justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url(img/header-bottom.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+    img{
+        width: 300px;
+        height: auto;
+        padding: $padding;
+        @media(max-width:768px){
+            padding: 50px 0;
+        }
+    }
+
+    h1{
+        font-size: 3rem;
+        @media(max-width:768px){
+            font-size: 2rem;
+        }
+    }
+
+    P{
+        padding: 20px 0;
+    }
+
+    button{
+     @include btn1;
+    }
+}

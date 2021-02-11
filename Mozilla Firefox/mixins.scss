@@ -10,3 +10,15 @@
         color: $white;
     }
 }
+
+@mixin btn1 {
+    padding: 15px 30px;
+    background: $blue;
+    border: none;
+    color: $white;
+    font-size: 1.3rem;
+    &:hover{
+        background: $darkBlue;
+        transition: $transition;
+    }
+}
