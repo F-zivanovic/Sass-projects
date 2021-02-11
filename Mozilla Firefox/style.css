@@ -5,7 +5,8 @@
 
 body {
   font-family: "Inter", sans-serif;
-  line-height: 1.6; }
+  line-height: 1.6;
+  color: #20123a; }
 
 ul {
   list-style-type: none; }
@@ -18,5 +19,37 @@ a {
 .container {
   width: 80%;
   margin: auto; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0; }
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column; } }
+  nav ul {
+    display: flex; }
+    nav ul li {
+      padding: 0px 20px; }
+      @media (max-width: 768px) {
+        nav ul li {
+          padding: 0 10px; } }
+      nav ul li a {
+        color: #08204e;
+        font-weight: 700;
+        font-size: 1.2rem; }
+        nav ul li a:hover {
+          color: #0060df; }
+  nav button {
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border: 2px solid #0060df;
+    background: none;
+    color: #0060df; }
+    nav button:hover {
+      background: #0250bb;
+      transition: 0.4s ease;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

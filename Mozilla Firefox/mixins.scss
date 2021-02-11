@@ -1,0 +1,12 @@
+@mixin btn {
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    border: 2px solid $blue;
+    background: none;
+    color: $blue;
+    &:hover{
+        background: $buttonHover;
+        transition: $transition;
+        color: $white;
+    }
+}
