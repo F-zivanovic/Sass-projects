@@ -77,11 +77,14 @@ header{
     // justify-content: flex-start;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 90vh;
     background-image: url(img/header-bottom.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: auto;
+    @media(max-width:768px){
+        height: 90vh;
+    }
 
     img{
         width: 300px;
@@ -106,4 +109,40 @@ header{
     button{
      @include btn1;
     }
+}
+
+// DEVELOPERS
+.developers{
+    display: flex;
+    padding: $padding;
+    flex-wrap: wrap;
+    align-items: center;
+
+    article{
+        &:first-child{
+            flex: 1;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+        }
+
+        &:last-child{
+            flex: 1;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+            img{
+                width: 100%;
+                background-size: auto;
+            }
+        }
+
+        h2{
+            font-size: 2rem;
+            letter-spacing: 2px;
+            padding: 10px 0px;
+        }
+    }
+   
+
 }
