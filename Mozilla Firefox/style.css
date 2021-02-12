@@ -199,4 +199,20 @@ header {
           .tools .container article:nth-child(6) {
             flex: 0 0 100%; } }
 
+footer {
+  background-color: #08204e;
+  color: #fff;
+  padding: 70px 0px; }
+  footer .container {
+    display: flex;
+    justify-content: space-between; }
+    footer .container article {
+      flex: 0 0 30%; }
+      footer .container article ul li {
+        padding: 10px 0px; }
+        footer .container article ul li a {
+          color: #fff; }
+          footer .container article ul li a:hover {
+            color: #0060df; }
+
 /*# sourceMappingURL=style.css.map */

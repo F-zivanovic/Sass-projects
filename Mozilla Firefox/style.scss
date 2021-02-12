@@ -258,3 +258,33 @@ header{
         }
     }
 }
+
+// FOOTER
+footer{
+
+    background-color: $darkBlue;
+    color: $white;
+    padding: $padding;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        article{
+
+            flex:0 0 30%;
+            ul{
+                li{
+                    padding: 10px 0px;
+                    a{
+                        color: $white;
+                        &:hover{
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
