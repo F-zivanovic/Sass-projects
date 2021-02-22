@@ -120,4 +120,42 @@ header {
         transition: 0.4s ease;
         cursor: pointer; }
 
+.price {
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .price article {
+    flex: 1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+    padding: 30px; }
+    @media (max-width: 768px) {
+      .price article {
+        flex: 0 0 100%; } }
+    .price article:hover {
+      transform: scale(1.1);
+      background: #fff;
+      transition-duration: .2s; }
+    .price article h2 {
+      font-size: 1.6rem; }
+    .price article p {
+      padding: 30px 0px; }
+    .price article .drugi {
+      font-size: 4rem;
+      color: #012f5b;
+      padding: 20px 0px; }
+    .price article button {
+      background: none;
+      border: 2px solid #506df5;
+      padding: 15px 30px;
+      color: #506df5;
+      font-size: 1.2rem; }
+      .price article button:hover {
+        background-color: #506df5;
+        color: #fff;
+        transition: 0.4s ease; }
+
 /*# sourceMappingURL=style.css.map */

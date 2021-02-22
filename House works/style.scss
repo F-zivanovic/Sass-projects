@@ -135,3 +135,50 @@ header{
     }
 
 }
+
+// PRICE
+.price{
+    padding: $padding;
+    @include flex(center, center, row, wrap);
+    
+    article{
+        flex: 1;
+        border: 1px solid $lightgray;
+        text-align: center;
+        padding: 30px;
+        @media(max-width:768px){
+            flex: 0 0 100%;
+        }
+        &:hover{
+            transform: scale(1.1);
+            background: $white;
+            transition-duration: .2s;
+        }
+
+        h2{
+            font-size: 1.6rem;
+        }
+        p{
+            padding: 30px 0px;
+        }
+        .drugi{
+            font-size: 4rem;
+            color: $darkblue;
+            padding: 20px 0px;
+        }
+        button{
+            background: none;
+            border: 2px solid $tertiary;
+            padding: 15px 30px;
+            color: $tertiary;
+            font-size: 1.2rem;
+            &:hover{
+                background-color: $tertiary;
+                color: $white;
+                transition: $transition;
+            }
+        }
+
+
+    }
+}
