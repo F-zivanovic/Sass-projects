@@ -27,9 +27,58 @@ ul{
     list-style-type: none;
 }
 
-a{
-    text-decoration: none;
-    &:hover{
-        transition: $transition;
+
+// NAV
+nav{
+    background-color: $primary;
+    padding: 20px;
+    @include flex(space-between, center,row, wrap);
+
+    article{
+        flex: 0 0 30%;
+        &:nth-child(1){
+           @include flex(flex-start, center, row, wrap);
+           
+            @media(max-width:768px){
+                flex-direction: column;
+            }
+            img{
+                width: 80px;
+            }
+
+            a{
+                text-decoration: none;
+                color: $white;
+                font-weight: 700;
+                font-size: 1.5rem;
+                margin-left: 20px;
+                &:hover{
+                    transition: $transition;
+                    color: $lightgray;
+                }
+            }
+
+        }
+
+        &:nth-child(2){
+            color: $white;
+            font-size: 0.9rem;
+            @include flex(space-around, center, row, wrap);
+
+            @media(max-width:768px){
+                flex-direction: column;
+            }
+        }
+
+        &:nth-child(3){
+            @include flex(flex-end, center, row, wrap);
+    
+            button{
+             @include btn;
+            }
+        }
+    
     }
+    
+
 }
