@@ -38,7 +38,7 @@ nav{
         flex: 0 0 30%;
         &:nth-child(1){
            @include flex(flex-start, center, row, wrap);
-           
+
             @media(max-width:768px){
                 flex-direction: column;
             }
@@ -79,6 +79,59 @@ nav{
         }
     
     }
-    
+
+}
+
+// HEADER
+header{
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    @include flex(center, center, column, wrap);
+    color: $white;
+
+    h1{
+        font-size: 3rem;
+    }
+    p{
+        padding: 20px 0px;
+        text-align: center;
+    }
+
+    .btn{
+        @include flex(space-betweens, center, row, wrap);
+
+        button{
+            
+            &:first-child{
+                background-color: $tertiary;
+                padding: 15px 30px;
+                color: $white;
+                font-size: 1rem;
+                margin-right: 10px;
+                &:hover{
+                    background: none;
+                    transition: $transition;
+                    border: 2px solid $tertiary;
+                    cursor: pointer;
+                }
+            }
+
+            &:last-child{
+                background: none;
+                border: 2px solid $white;
+                color: $white;
+                padding: 15px 30px;
+                font-size: 1rem;
+                &:hover{
+                    background-color: $white;
+                    color: $text;
+                    transition: $transition;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
 }

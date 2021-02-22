@@ -72,6 +72,52 @@ nav {
         nav article:nth-child(3) button:hover {
           transition: 0.4s ease;
           background-color: #fff;
-          color: #313131; }
+          color: #313131;
+          cursor: pointer; }
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #fff; }
+  header h1 {
+    font-size: 3rem; }
+  header p {
+    padding: 20px 0px;
+    text-align: center; }
+  header .btn {
+    display: flex;
+    justify-content: space-betweens;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    header .btn button:first-child {
+      background-color: #506df5;
+      padding: 15px 30px;
+      color: #fff;
+      font-size: 1rem;
+      margin-right: 10px; }
+      header .btn button:first-child:hover {
+        background: none;
+        transition: 0.4s ease;
+        border: 2px solid #506df5;
+        cursor: pointer; }
+    header .btn button:last-child {
+      background: none;
+      border: 2px solid #fff;
+      color: #fff;
+      padding: 15px 30px;
+      font-size: 1rem; }
+      header .btn button:last-child:hover {
+        background-color: #fff;
+        color: #585858;
+        transition: 0.4s ease;
+        cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
