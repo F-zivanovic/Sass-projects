@@ -1,0 +1,24 @@
+@mixin btn {
+    background: none;
+    border: 2px solid $white;
+    color: $white;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+
+    &:hover{
+        transition: $transition;
+        background-color: $white;
+        color: $primary;
+    
+    }
+}
+
+@mixin flex($justify, $align, $direction, $wrap) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    
+}
