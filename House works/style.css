@@ -158,4 +158,64 @@ header {
         color: #fff;
         transition: 0.4s ease; }
 
+.advantages {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/bg2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px 0;
+  text-align: center; }
+  @media (max-width: 768px) {
+    .advantages {
+      height: 2060px; } }
+  .advantages h2 {
+    color: #fff;
+    font-size: 3.5rem;
+    letter-spacing: 1.8px; }
+  .advantages .line {
+    display: block;
+    content: "";
+    background-color: #fde21c;
+    height: 4px;
+    margin: 10px auto;
+    width: 150px; }
+  .advantages .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px; }
+    .advantages .container article {
+      flex: 0 0 30%;
+      background-color: #fff;
+      border: 2px solid #fff;
+      border-radius: 10px; }
+      @media (max-width: 768px) {
+        .advantages .container article {
+          flex: 0 0 100%;
+          margin-top: 20px; } }
+      .advantages .container article img {
+        width: 100%; }
+      .advantages .container article h4 {
+        padding: 20px;
+        text-align: left;
+        font-size: 1.7rem;
+        font-weight: 300; }
+      .advantages .container article p {
+        text-align: left;
+        font-weight: 300;
+        padding: 0px 20px; }
+      .advantages .container article button {
+        background: none;
+        border: 2px solid #506df5;
+        padding: 15px 30px;
+        color: #506df5;
+        font-size: 1.2rem;
+        margin: 20px 0px; }
+        .advantages .container article button:hover {
+          background-color: #506df5;
+          color: #fff;
+          transition: 0.4s ease; }
+
 /*# sourceMappingURL=style.css.map */

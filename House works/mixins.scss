@@ -15,6 +15,20 @@
     }
 }
 
+@mixin btn1 {
+    background: none;
+    border: 2px solid $tertiary;
+    padding: 15px 30px;
+    color: $tertiary;
+    font-size: 1.2rem;
+    &:hover{
+        background-color: $tertiary;
+        color: $white;
+        transition: $transition;
+    }
+    
+}
+
 @mixin flex($justify, $align, $direction, $wrap) {
     display: flex;
     justify-content: $justify;

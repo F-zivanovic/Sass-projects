@@ -167,18 +167,73 @@ header{
             padding: 20px 0px;
         }
         button{
-            background: none;
-            border: 2px solid $tertiary;
-            padding: 15px 30px;
-            color: $tertiary;
-            font-size: 1.2rem;
-            &:hover{
-                background-color: $tertiary;
-                color: $white;
-                transition: $transition;
+           @include btn1;
+        }
+    }
+}
+
+// ADVANTAGES
+.advantages{
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: $padding;
+    text-align: center;
+    @media(max-width:768px){
+        height: 2060px;
+    }
+
+    h2{
+        color: $white;
+        font-size: 3.5rem;
+        letter-spacing: 1.8px;
+    }
+    .line{
+        display: block;
+        content: "";
+        background-color: $secondary;
+        height: 4px;
+        margin: 10px auto;
+        width: 150px;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+        margin-top: 50px;
+
+        article{
+            flex: 0 0 30%;
+            background-color: $white;
+            border: 2px solid $white;
+            border-radius: 10px;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+                margin-top: 20px;
+            }
+
+            img{
+                width: 100%;
+            }
+            h4{
+                padding: 20px;
+                text-align: left;
+                font-size: 1.7rem;
+                font-weight: 300;
+            }
+
+            p{
+                text-align: left;
+                font-weight: 300;
+                padding: 0px 20px;
+            }
+
+            button{
+                @include btn1;
+               margin: 20px 0px;
             }
         }
-
-
     }
+
+
 }
