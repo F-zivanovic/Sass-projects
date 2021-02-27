@@ -181,7 +181,7 @@ header{
     padding: $padding;
     text-align: center;
     @media(max-width:768px){
-        height: 2060px;
+        height: 250vh;
     }
 
     h2{
@@ -268,7 +268,6 @@ header{
 
             .text{
                 flex:0 0 45%;
-                background-color: $white;
                 text-align: left;
                 padding: 20px 0px 20px 20px;
 
@@ -288,13 +287,67 @@ header{
                     height: 250px;
                 }
             }
-
-
             
         }
     }
 }
 
+// SERVICES
+.services{
+    padding: $padding;
+    background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    color: $white;
+    @media(max-width:768px){
+        height: 120vh;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            flex: 0 0 45%;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            i{
+                color: $secondary;
+                font-size: 8rem;
+                padding-top: 40px;
+            }
+
+            h3{
+                font-size: 2rem;
+                font-weight: 400;
+                padding: 20px 0px;
+            }
+
+            button{
+                @include btn1;
+                border: 2px solid$lightgray;
+                color: $lightgray;
+                margin-top: 20px;
+            }
+
+            h5{
+                font-size: 1.6rem;
+            }
+
+            &:first-child{
+                text-align: center;
+                border: 2px solid $white;
+                padding: 30px;
+
+                p{
+                   margin: 20px 0px;
+                }
+            }
+        }
+    }
+}
 
     
     
