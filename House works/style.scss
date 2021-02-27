@@ -16,6 +16,7 @@ body{
     line-height: 1.3;
     font-family: $fontFamily;
     font-size: $fontSize;
+    background-color: #f7f7f7;
 }
 
 .container{
@@ -255,7 +256,7 @@ header{
             flex: 0 0 45%;
             margin-top: 30px;
             height: 90%;
-            height: 250px;
+            height: 220px;
             @media(max-width:768px){
                 flex: 0 0 100%;
             }
@@ -284,7 +285,7 @@ header{
 
                 img{
                     width: 100%; 
-                    height: 250px;
+                    height: 220px;
                 }
             }
             
@@ -346,6 +347,29 @@ header{
                 }
             }
         }
+    }
+}
+
+// ABOUT
+.about{
+    padding: $padding;
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            flex: 0 0 30%;
+            @media(max-width:768px){
+                
+            }
+
+            h2{
+                font-size: 2.5rem;
+
+            }
+        }
+
+       
     }
 }
 
