@@ -360,7 +360,7 @@ header{
         article{
             flex: 0 0 30%;
             @media(max-width:768px){
-                
+
             }
 
             h2{
@@ -368,8 +368,37 @@ header{
 
             }
         }
+    }
+}
 
-       
+// CONTACT
+.contact{
+    padding: $padding;
+    text-align: center;
+    background-color: $primary;
+
+    button{
+
+        &:first-child{
+            @include btn1;
+            background-color: $secondary;
+            border: none;
+            color: $primary;
+        }
+
+        &:nth-child(2){
+            @include btn1;
+            border: 1px solid $white;
+            color: $white;
+        }
+        &:nth-child(3){
+            @include btn1;
+            background-color: $tertiary;
+            color: $white;
+            &:hover{
+                background: none;
+            }
+        }
     }
 }
 
