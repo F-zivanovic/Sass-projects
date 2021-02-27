@@ -177,7 +177,7 @@ header{
     background-image:linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(img/bg2.jpg);
     background-position: center;
     background-size: cover;
-    height: 100vh;
+    height: 90vh;
     padding: $padding;
     text-align: center;
     @media(max-width:768px){
@@ -233,6 +233,64 @@ header{
                 @include btn1;
                margin: 20px 0px;
             }
+        }
+    }
+}
+
+// TEAM
+.team{
+    padding: $padding;
+    text-align: center;
+
+    h2{
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: 2px;
+    }
+
+    .container{
+        @include flex(space-between, center, row, wrap);
+
+        article{
+            flex: 0 0 45%;
+            margin-top: 30px;
+            height: 90%;
+            height: 250px;
+            @media(max-width:768px){
+                flex: 0 0 100%;
+            }
+
+            @include flex(space-between, center, row, wrap);
+            &:hover{
+                box-shadow: 0 0 15px;
+                transition: $transition;
+            }
+
+            .text{
+                flex:0 0 45%;
+                background-color: $white;
+                text-align: left;
+                padding: 20px 0px 20px 20px;
+
+                h4{
+                    font-size: 1.6rem;
+                }
+                p{
+                    padding-top: 20px;
+                }
+            }
+
+            .images{
+                flex: 0 0 45%;
+
+                img{
+                    width: 100%; 
+                    height: 250px;
+                }
+            }
+
+
+            
         }
     }
 }
